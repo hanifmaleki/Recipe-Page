@@ -1,0 +1,42 @@
+{
+  "name": "recipepage",
+  "version": "1.0.0",
+  "description": "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content.",
+  "keywords": [
+    "Frontend",
+    "Development",
+    "Pug",
+    "SCSS",
+    "Frontend",
+    "Mentor"
+  ],
+  "homepage": "https://github.com/hanifmaleki/Recipe-Page#readme",
+  "bugs": {
+    "url": "https://github.com/hanifmaleki/Recipe-Page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanifmaleki/Recipe-Page.git"
+  },
+  "license": "ISC",
+  "author": "Hanif Maleki",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass src/scss:dist/css",
+    "scss:build": "sass src/scss:dist/css --style=compressed",
+    "pug": "node build-pug.js",
+    "copy-js": "copy-files-from-to src/js dist --when-file-exists overwrite",
+    "copy-assets": "copy-files-from-to assets dist/assets --when-file-exists overwrite",
+    "watch": "concurrently 'node chokidar.js' 'live-server dist'",
+    "build": "npm run scss:build && npm run pug && npm run copy-js && npm run copy-assets"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "concurrently": "^9.2.1",
+    "copy-files-from-to": "^3.12.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.93.2"
+  }
+}
