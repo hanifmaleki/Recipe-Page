@@ -1,8 +1,16 @@
+@use 'variables';
+@use 'recipe';
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: green;
+    margin: 0;
+    font-family: variables.$font-family-outfit;
+    font-weight: 400;
+    font-size: variables.$fs-base;
+    line-height: variables.$lh-base;
+    color: variables.$text-primary;
+    background-color: variables.$bg; 
 }

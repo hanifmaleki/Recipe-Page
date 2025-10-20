@@ -1,0 +1,46 @@
+header
+    .image-container
+        img.recipe-image(src='assets/images/image-omelette.jpeg')
+    .recipe-container
+        h1.recipe-title(data-i18n='simple_omelette_recipe')
+main
+    .description(data-i18n='recipe_description')
+    .preparation-card-container
+        .preparation-card-title(data-i18n='preparation_time')
+        ul 
+            li(data-i18n='total_approximate_time')
+            li(data-i18n='preparation_time_item')
+            li(data-i18n='coocking_time')
+    .card-container
+        .card-title(data-i18n='ingredients')
+        ul 
+            li(data-i18n='two_three_large_eggs')
+            li(data-i18n='salt_to_taste')
+            li(data-i18n='pepper_to_taste')
+            li(data-i18n='one_table_spoon_of_butter_or_oil')
+            li(data-i18n='optional_fillings_chees_text')
+    .card-container 
+        .card-title(data-i18n='instructions')
+         ol 
+            li(data-i18n='beat_the_eggs_text')
+            li(data-i18n='heat_the_pan_text')
+            li(data-i18n='coock_the_omelette_text')
+            li(data-i18n='add_fillings_text')
+            li(data-i18n='fold_and_serve_text')
+            li(data-i18n='enjoy_serve_hot_text')
+    .card-container 
+        .card-title(data-i18n='nutrition')
+        .card-text(data-i18n='the_table_shows_nutritional_values_text')
+        .card-grid-content-container 
+            .card-grid-key-value-container
+                .card-grid-key(data-i18n='calories')
+                .card-grid-value(data-i18n='gram', data-i18n-param-number='227')
+            .card-grid-key-value-container
+                .card-grid-key(data-i18n='carbs')
+                .card-grid-value(data-i18n='gram', data-i18n-param-number='0')
+            .card-grid-key-value-container
+                .card-grid-key(data-i18n='protein')
+                .card-grid-value(data-i18n='gram', data-i18n-param-number='20')
+            .card-grid-key-value-container
+                .card-grid-key(data-i18n='fat')
+                .card-grid-value(data-i18n='gram', data-i18n-param-number='22')

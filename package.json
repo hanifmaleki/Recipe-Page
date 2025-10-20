@@ -27,16 +27,29 @@
     "scss": "sass src/scss:dist/css",
     "scss:build": "sass src/scss:dist/css --style=compressed",
     "pug": "node build-pug.js",
-    "copy-js": "copy-files-from-to src/js dist --when-file-exists overwrite",
-    "copy-assets": "copy-files-from-to assets dist/assets --when-file-exists overwrite",
+    "copy-js-assets": "copy-files-from-to --when-file-exists overwrite",
     "watch": "concurrently 'node chokidar.js' 'live-server dist'",
-    "build": "npm run scss:build && npm run pug && npm run copy-js && npm run copy-assets"
+    "build": "npm run scss:build && npm run pug && npm run copy-js-assets"
   },
   "dependencies": {
     "chokidar": "^4.0.3",
     "concurrently": "^9.2.1",
     "copy-files-from-to": "^3.12.1",
+    "i18next": "^25.6.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.93.2"
-  }
+  },
+  "devDependencies": {
+    "i18next-parser": "^9.0.2"
+  },
+  "copyFiles": [
+    {
+      "from": "src/js",
+      "to": "dist"
+    },
+    {
+      "from": "assets",
+      "to": "dist/assets"
+    }
+  ]
 }

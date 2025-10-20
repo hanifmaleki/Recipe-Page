@@ -4,9 +4,13 @@ html(lang='en' data-theme='light')
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-        link(rel='preconnect' href='https://fonts.googleapis.com')
-        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-        link(href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap' rel='stylesheet')
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Young+Serif&display=swap', rel='stylesheet')
+
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap' rel='stylesheet')
 
         link(rel='icon' type='image/png' size='32x32' href='./assets/image/fav-icon-32x32.png')
         link(rel='stylesheet' href='css/styles.css')
@@ -18,4 +22,10 @@ html(lang='en' data-theme='light')
 
         title(data-i18n='title')
     body 
-        h1 it will be Recipe Page
+        include recipe.pug 
+        include footer.pug
+
+
+
+
+

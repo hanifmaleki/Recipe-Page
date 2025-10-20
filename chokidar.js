@@ -11,9 +11,13 @@ chokidar.watch('src/js').on('all', () => {
 })
 
 chokidar.watch('assets').on('all', () => {
-    run('npm run pug')
+    run('npm run copy-js-assets')
 })
 
 chokidar.watch('src/pug').on('all', () => {
+    run('npm run pug')
+})
+
+chokidar.watch('src/scss').on('all', () => {
     run('npm run scss')
 })
