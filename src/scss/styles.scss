@@ -1,8 +1,12 @@
+@use 'variables';
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: green;
+    margin: 0;
+    font-family: variables.$font-family-outfit;
+    font-weight: 400;
+    background-color: variables.$bg; 
 }

@@ -4,9 +4,13 @@ html(lang='en' data-theme='light')
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-        link(rel='preconnect' href='https://fonts.googleapis.com')
-        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-        link(href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap' rel='stylesheet')
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Young+Serif&display=swap', rel='stylesheet')
+
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap' rel='stylesheet')
 
         link(rel='icon' type='image/png' size='32x32' href='./assets/image/fav-icon-32x32.png')
         link(rel='stylesheet' href='css/styles.css')
@@ -18,4 +22,46 @@ html(lang='en' data-theme='light')
 
         title(data-i18n='title')
     body 
-        h1 it will be Recipe Page
+        h1(data-i18n='simple_omelette_recipe')
+        .description(data-i18n='recipe_description')
+        .preparation-card-container
+            .preparation-card-title(data-i18n='preparation_time')
+            ul 
+                li(data-i18n='total_approximate_time')
+                li(data-i18n='preparation_time_item')
+                li(data-i18n='coocking_time')
+        .card-container
+            .card-title(data-i18n='ingredients')
+            ul 
+                li(data-i18n='two_three_large_eggs')
+                li(data-i18n='salt_to_taste')
+                li(data-i18n='pepper_to_taste')
+                li(data-i18n='one_table_spoon_of_butter_or_oil')
+                li(data-i18n='optional_fillings_chees_text')
+        .card_container 
+            .card-title(data-i18n='instructions')
+            ol 
+                li(data-i18n='beat_the_eggs_text')
+                li(data-i18n='heat_the_pan_text')
+                li(data-i18n='coock_the_omelette_text')
+                li(data-i18n='add_fillings_text')
+                li(data-i18n='fold_and_serve_text')
+                li(data-i18n?'enjoy_text')
+        .card-container 
+            .card-title(data-i18n='nutrition')
+            .card-text(data-i18n='the_table_shows_nutritional_values_text')
+            .card-grid-content-container 
+                .card-grid-key(data-i18n='calories')
+                .card-grid-value(data-i18n='227g')
+                .card-grid-key(data-i18n='carbs')
+                .card-grid-value(data-i18n='0g')
+                .card-grid-key(data-i18n='protein')
+                .card-grid-value(data-i18n='20g')
+                .card-grid-key(data-i18n='fat')
+                .card-grid-value(data-i18n='22g')
+
+
+
+
+
+
