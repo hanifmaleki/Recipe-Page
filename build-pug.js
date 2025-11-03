@@ -10,7 +10,12 @@ const languages = [
     {
         'code': 'de',
         'name': 'Deutsch'
-    }
+    },
+    {
+        'code': 'fa',
+        'name': 'فارسی',
+        'rtl': true,
+    },
 ]
 
 const translations = {}

@@ -1,0 +1,14 @@
+@use 'variables';
+
+.languages {
+    li {
+        cursor: pointer;
+        list-style: none;
+        color: variables.$text-primary;
+
+        &.selected {
+            color: variables.$text-secondary;
+            cursor: auto;
+        }
+    }
+}

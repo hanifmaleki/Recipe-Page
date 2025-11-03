@@ -1,0 +1,6 @@
+.language-container(id='LanguageSelector')
+    ul.languages 
+        each language in languages 
+            li(id=language.code, data-rtl=language.rtl ? 1 : 0)= language.name 
+
+
