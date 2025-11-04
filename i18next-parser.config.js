@@ -1,7 +1,7 @@
 module.exports = {
     input: ['dist/**/*.html'],
     output: 'translations/$LOCALE.json',
-    locales: ['en', 'de'],
+    locales: ['en', 'de', 'fa'],
     defaultNamespace: 'translation',
     keySeparator: '.',
     namespaceSeparator: ':',

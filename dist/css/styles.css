@@ -24,6 +24,17 @@
 }
 
 /* SCSS variables reference CSS variables */
+.attribution {
+  margin-block-start: calc(2rem + 2vw);
+  text-align: center;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 @media (min-width: 480px) {
   .image-container {
     margin: 1rem;
@@ -106,6 +117,27 @@
 .card-grid-value {
   font-weight: 600;
   color: var(--color-brown-800);
+}
+
+.languages li {
+  cursor: pointer;
+  list-style: none;
+  color: var(--color-stone-600);
+}
+.languages li.selected {
+  color: var(--color-brown-800);
+  cursor: auto;
+}
+
+.theme-outer-container {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.theme-container {
+  border: 1px solid var(--color-stone-150);
+  border-radius: 1rem;
 }
 
 * {
