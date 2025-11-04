@@ -1,0 +1,12 @@
+@use 'variables';
+
+.theme-outer-container {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.theme-container {
+    border: 1px solid variables.$line-color;
+    border-radius: 1rem;
+}
