@@ -2,7 +2,7 @@
 
 .image-container {
     @include variables.respond(sm) {
-        margin: 1rem;
+        padding: 1rem;
     }
 }
 
@@ -40,7 +40,7 @@
 }
 
 .preparation-card-title {
-    padding-left: 1rem;
+    padding-inline-start: 1rem;
     font-size: variables.$fs-lg;
     font-weight: 600;
     color: variables.$color-secondary;

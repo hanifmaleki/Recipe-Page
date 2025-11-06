@@ -15,5 +15,16 @@ body {
     font-size: variables.$fs-base;
     line-height: variables.$lh-base;
     color: variables.$text-primary;
+    background-color: variables.$body-bg; 
+}
+
+.main-container {
+    margin: auto;
+    max-width: variables.$bp-sm;
     background-color: variables.$bg; 
+
+    @include variables.respond(sm) {
+        margin-block-start: clamp(0rem, 5vw, 5rem);
+        border-radius: 2rem;
+    }
 }
